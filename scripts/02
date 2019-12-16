@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "Quel utilisateur souhaitez vous supprimer ?"
+read name
+passwd -l $name 2>/dev/null
+userdel -f $name 2>/dev/null

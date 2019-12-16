@@ -1,0 +1,58 @@
+#!/bin/bash
+
+let "git = 0"
+let "connect = 0"
+echo "Project Name ?"
+read name
+echo "Where do you want to create the project ?"
+read path
+mkdir $path$name
+cd $path$name
+while test $git = 0
+do
+	echo "Make the repo a git repo ? (y/n)"
+	read answer
+	if test $answer = "y"
+		then
+			let "git = 1"
+	elif test $answer = "n"
+		then
+			let "git = -1"
+	else
+		echo "I didn't understood your answer !"
+	fi
+done
+mkdir srcs includes
+touch srcs/main.c
+touch includes/$name.h
+git clone https://github.com/kgrosjea/utils.git git_repo
+cp ./git_repo/Makefile .
+cp -R ./git_repo/Libft ./libft
+rm -rf ./git_repo/
+sed -i '' "s/proj_name/$name/" ./Makefile
+if test $git = 1
+	then
+		git init
+		git add .
+		git commit -m "first commit"
+		while test $connect = 0
+		do
+			echo "Connect it to your personnal git_hub ? (y/n)"
+			read answer
+			if test $answer = "y"
+				then
+					let "connect = 1"
+					echo "What is your github login ?"
+					read git_name
+					echo "Make sure you created a repo called $name in your github ! Press any key to continue !"
+					read key
+					git remote add origin https://github.com/$git_name/$name.git
+					git push -u origin master
+			elif test $answer = "n"
+				then
+					let "connect = 0"
+			else
+				echo "I didn't understood your answer !"
+			fi
+		done
+fi

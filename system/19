@@ -1,0 +1,31 @@
+#ls -l /etc/init.d/
+-rwxr-xr-x 1 root root 5336 Feb  1  2016 alsa-utils
+-rwxr-xr-x 1 root root 2014 May 29  2017 anacron
+-rwxr-xr-x 1 root root 8181 Jun 16 05:49 apache2
+-rwxr-xr-x 1 root root 2489 Jun 16 05:49 apache-htcacheclean
+-rwxr-xr-x 1 root root 2401 Jan 23  2017 avahi-daemon
+-rwxr-xr-x 1 root root 2948 Sep 13  2017 bluetooth
+-rwxr-xr-x 1 root root 1232 Apr  6  2017 console-setup.sh
+-rwxr-xr-x 1 root root 3049 Oct  7  2017 cron
+-rwxr-xr-x 1 root root 2816 Aug 21 03:51 cups
+-rwxr-xr-x 1 root root 1961 May 13 11:10 cups-browsed
+-rwxr-xr-x 1 root root 2813 Jun  9 17:42 dbus
+-rwxr-xr-x 1 root root 6754 Sep  3 14:01 exim4
+-rwxr-xr-x 1 root root 3033 Aug  9  2018 gdm3
+-rwxr-xr-x 1 root root 3809 Mar  7  2018 hwclock.sh
+-rwxr-xr-x 1 root root 1479 May 18  2016 keyboard-setup.sh
+-rwxr-xr-x 1 root root 2044 Dec 25  2016 kmod
+-rwxr-xr-x 1 root root 2241 Apr 26  2017 minissdpd
+-rwxr-xr-x 1 root root 4597 Sep 16  2016 networking
+-rwxr-xr-x 1 root root 1757 Nov  2  2018 network-manager
+-rwxr-xr-x 1 root root  612 Dec  4  2015 pppd-dns
+-rwxr-xr-x 1 root root 1191 May 17  2018 procps
+-rwxr-xr-x 1 root root 2868 Jan 18  2017 rsyslog
+-rwxr-xr-x 1 root root 2330 May 21  2017 saned
+-rwxr-xr-x 1 root root 2117 Aug  1  2017 speech-dispatcher
+-rwxr-xr-x 1 root root 4033 Mar  1  2019 ssh
+-rwxr-xr-x 1 root root 6087 Oct 28  2018 udev
+-rwxr-xr-x 1 root root 1391 May  6  2017 unattended-upgrades
+-rwxr-xr-x 1 root root 2757 Nov 23  2016 x11-common
+
+Those are called Deamons

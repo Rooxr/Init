@@ -1,0 +1,2 @@
+lsblk -a
+#sudo fdisk -l

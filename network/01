@@ -1,0 +1,2 @@
+ifconfig -l #list all network interfaces
+#ifconfig -a | grep UP | cut -d: -f1 #list all ACTIVE network interfaces

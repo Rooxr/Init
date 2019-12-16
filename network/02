@@ -1,0 +1,5 @@
+var=$(ifconfig en0 | grep -o "broadcast *.*" | cut -d' ' -f2) #(a)
+echo "Broadcast\n"
+echo $var
+echo "\nIPs\n"
+ping -c2 -s0 $var | grep "icmp_seq=0" | cut -d' ' -f4 | cut -d: -f1 #(b)

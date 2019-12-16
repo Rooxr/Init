@@ -1,0 +1,2 @@
+apt list --installed
+#dpkg-query -l | grep '^.i' | cut -d' ' -f3 | cut -d: -f1
